@@ -4,7 +4,7 @@
 int main(void)
 {
    double a;
-   printf("Let a be: ");
+   printf("Let a to be: ");
    scanf("%lf", &a);
 
    if(a<0){
