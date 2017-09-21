@@ -2,7 +2,11 @@
 
 int main(void) {
    
+<<<<<<< HEAD
    int TaxiType,Dist,Day,Hour,Minute,FlagD, DistFee, DistCharge, DistCharge2, Metered, i, j, x; 
+=======
+   int TaxiType,Dist,Day,Hour,Minute,FlagD, DistFee, DistCharge, DistCharge2, Metered; 
+>>>>>>> e1c357735c8c45d61366da993eadce11d2d51330
    
    
    DistFee = 0;
@@ -33,19 +37,31 @@ int main(void) {
    
     if(Dist <= 10000)
      {
+<<<<<<< HEAD
          for(i = 0; i < Dist-1000; i = i + 400)
+=======
+         for(int i = 0; i < Dist-1000; i = i + 400)
+>>>>>>> e1c357735c8c45d61366da993eadce11d2d51330
          {
             DistFee = DistFee + DistCharge;
         }
      }
       else
       {
+<<<<<<< HEAD
          for(i = 0; i < 9000; i =  i + 400)
+=======
+         for(int i = 0; i < 9000;i =  i + 400)
+>>>>>>> e1c357735c8c45d61366da993eadce11d2d51330
          {
             DistFee = DistFee + DistCharge;
          }
 
+<<<<<<< HEAD
          for(j = 0; j < Dist - 10000; j = j + 350)
+=======
+         for(int i = 0; i < Dist - 10000; i = i + 350)
+>>>>>>> e1c357735c8c45d61366da993eadce11d2d51330
          {
             DistFee = DistFee + DistCharge2; 
          }
@@ -69,6 +85,7 @@ int main(void) {
 
          }
      }
+<<<<<<< HEAD
      
      
      if(Hour >= 18 && Hour < 24)
@@ -76,6 +93,15 @@ int main(void) {
          Metered = Metered + Metered * 25/100;
      }
    
+=======
+     else
+     {
+        if(Hour >= 18 && Hour < 24)
+        {
+           Metered = Metered + Metered * 25/100;
+        }
+     }
+>>>>>>> e1c357735c8c45d61366da993eadce11d2d51330
 
      if(Hour < 6)
      {
@@ -87,7 +113,11 @@ int main(void) {
 
   */ 
 
+<<<<<<< HEAD
    printf("$%d.%d%d\n",Metered/100 ,(Metered - Metered/100*100)/10,0);
+=======
+   printf("$%d.%d",Metered/100,(Metered - Metered/100*100)/10 * 10);
+>>>>>>> e1c357735c8c45d61366da993eadce11d2d51330
    
 
    return 0;
